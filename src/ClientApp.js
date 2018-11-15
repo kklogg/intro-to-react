@@ -1,17 +1,20 @@
+// DOM helper
+var el = React.createElement;
+
 var MyTitle = function() {
     return (
-        React.createElement('div', null,
-            React.createElement('h1', null, "Check out this component!")
+        el('div', null,
+            el('h1', null, "Check out this component!")
         )
     );
 };
 
 var MyFirstComponent = function() {
     return (
-        React.createElement('div', null,
-            React.createElement(MyTitle, null),
-            React.createElement(MyTitle, null),
-            React.createElement(MyTitle, null)
+        el('div', null,
+        el(MyTitle, null),
+        el(MyTitle, null),
+        el(MyTitle, null)
         )
     );
 };
