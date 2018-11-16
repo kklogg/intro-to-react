@@ -1,10 +1,10 @@
 // DOM helper
 var el = React.createElement;
 
-var MyTitle = function() {
+var MyTitle = function(props) {
     return (
         el('div', null,
-            el('h1', null, "Check out this component!")
+            el('h1', {style: {color: props.color}}, props.title)
         )
     );
 };
@@ -12,9 +12,9 @@ var MyTitle = function() {
 var MyFirstComponent = function() {
     return (
         el('div', null,
-        el(MyTitle, null),
-        el(MyTitle, null),
-        el(MyTitle, null)
+        el(MyTitle, {color: 'rebeccapurple', title: 'House of Cards'}),
+        el(MyTitle, {color: 'peru', title: 'Orange is the New Black'}),
+        el(MyTitle, {color: 'burlywood', title: 'Stranger Things'})
         )
     );
 };
