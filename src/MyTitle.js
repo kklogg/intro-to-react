@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 // DOM helper
-var el = React.createElement;
+const el = React.createElement;
 
-var MyTitle = function(props) {
+const MyTitle = function (props) {
   return el(
-    "div",
+    'div',
     null,
-    el("h1", { style: { color: props.color } }, props.title)
+    el('h1', { style: { color: props.color } }, props.title),
   );
 };
 

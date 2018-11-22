@@ -1,22 +1,19 @@
-import React from "react";
-import { render } from "react-dom";
+import React from 'react';
+import { render } from 'react-dom';
 
-import MyTitle from "./MyTitle.js";
+import MyTitle from './MyTitle';
 
 // DOM helper
-var el = React.createElement;
+const el = React.createElement;
 
-var MyFirstComponent = function() {
+const MyFirstComponent = function () {
   return el(
-    "div",
+    'div',
     null,
-    el(MyTitle, { color: "rebeccapurple", title: "House of Cards" }),
-    el(MyTitle, { color: "peru", title: "Orange is the New Black" }),
-    el(MyTitle, { color: "burlywood", title: "Stranger Things" })
+    el(MyTitle, { color: 'rebeccapurple', title: 'House of Cards' }),
+    el(MyTitle, { color: 'peru', title: 'Orange is the New Black' }),
+    el(MyTitle, { color: 'burlywood', title: 'Stranger Things' }),
   );
 };
 
-render(
-  React.createElement(MyFirstComponent),
-  document.getElementById("app")
-);
+render(React.createElement(MyFirstComponent), document.getElementById('app'));
