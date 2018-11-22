@@ -4,5 +4,8 @@
     "react-dom": "^16.6.3",
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build": "npx webpack src/ClientApp.js public/bundle.js"
   }
 }

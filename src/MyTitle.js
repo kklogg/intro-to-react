@@ -1,3 +1,5 @@
+import React from "react";
+
 // DOM helper
 var el = React.createElement;
 

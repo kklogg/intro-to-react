@@ -1,3 +1,6 @@
+import React from "react";
+import { render } from "react-dom";
+
 import MyTitle from "./MyTitle.js";
 
 // DOM helper
@@ -13,7 +16,7 @@ var MyFirstComponent = function() {
   );
 };
 
-ReactDOM.render(
+render(
   React.createElement(MyFirstComponent),
   document.getElementById("app")
 );
