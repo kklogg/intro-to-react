@@ -1,6 +1,10 @@
 {
   "dependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
     "eslint-plugin-react": "^7.11.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -8,7 +12,7 @@
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "build": "npx webpack src/ClientApp.js public/bundle.js",
+    "build": "npx webpack",
     "lint": "npx eslint src/*.{js,jsx} --quiet"
   },
   "devDependencies": {
