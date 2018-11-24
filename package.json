@@ -15,7 +15,7 @@
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "build": "npx webpack",
+    "build": "npx webpack --mode=development --watch",
     "lint": "npx eslint src/*.{js,jsx} --quiet"
   },
   "devDependencies": {
