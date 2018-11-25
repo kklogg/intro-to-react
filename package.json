@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "npx webpack --mode=development --watch",
+    "dev": "npx webpack-dev-server",
     "lint": "npx eslint src/*.{js,jsx} --quiet"
   },
   "devDependencies": {
